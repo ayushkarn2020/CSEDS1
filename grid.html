@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid introduction</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        height:100vh;
+        width:100vh;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 10px;
+        background-color:antiquewhite;
+    }
+    .item {
+        background-color: #b7f1b9;
+        color: white;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        border:2px solid black;
+    }
+    .item1 {
+        grid-column: 1/7;
+        background-color: red;
+        text-align: center;
+    }
+    .item2 {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        text-align: center;
+        background-color: #b7f1b;
+    }
+    h1{
+        background-color: magenta;
+    }
+
+
+    </style>
+<body>
+    <h1>Newton equation of motion</h1>
+    <div class ="container">
+        <div class="item item1">Concept</div>
+        <div class="item item2">First law</div>
+        <div class="item item3">Second Law</div>
+        <div class="item item4">Third Law</div>
+        <img src="laws.jpg"></img>
+    </div>
+    
+    
+</body>
+</html>
