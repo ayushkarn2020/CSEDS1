@@ -1,0 +1,155 @@
+<html> 
+<head>   
+  <title>Response Sheet</title> 
+<style> 
+.title-bar { 
+    width: 100%; 
+    background: red; 
+    padding: 18px 0; 
+    border-bottom: 8px solid yellow; 
+    text-align: center; 
+}
+
+.responsive-box{
+
+    width: 90%; /* Use percentage for a fluid layout */
+    max-width: 800px; /* Prevents the box from getting too wide on large screens */
+    margin: auto; /* Centers the box horizontally */
+    padding: 20px;
+    background-color: blueviolet;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+
+}
+    h2 { 
+      text-align: center; 
+      margin-bottom: 20px; 
+      color:white       
+    } 
+
+    .button{
+        background-color: yell;
+
+
+    }
+
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px; 
+    } 
+    .bigbox{
+      background: gray; 
+      border-radius: 50px; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+      padding: 30px; 
+      text-align: center; 
+    }
+
+
+    .box { 
+      background: whitesmoke; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+      padding: 16px; 
+      text-align: center; 
+    } 
+ 
+    .box img { 
+      width: 100%; 
+      height: 150px; 
+      object-fit: cover; 
+      border-radius: 6px; 
+      margin-bottom: 10px; 
+    } 
+
+    body { 
+      font-family: Arial, Helvetica, sans-serif; 
+      margin: 0; 
+      background: lightblue; 
+      padding: 20px; 
+    } 
+    .box h3 { 
+      font-size: 18px; 
+      margin: 8px 0; 
+    } 
+
+ 
+    .box p { 
+      font-size: 14px; 
+      color: bluered; 
+      margin: 10 px; 
+    } 
+ 
+    price { 
+      font-weight: bold; 
+      color: #007bff; 
+    } 
+ 
+    @media (max-width: 1024px) { 
+      .grid { 
+        grid-template-columns: repeat(2, 2fr); 
+      } 
+    } 
+
+ 
+    @media (max-width: 600px) { 
+      .grid { 
+        grid-template-columns: 2fr; 
+      } 
+    } 
+  </style> 
+</head> 
+<body> 
+    <div class="title-bar">
+  <h2>Response sheet</h2> 
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="responsive-box">
+<div class="grid"> 
+    <div class="box"> 
+      <img src="drone.jpeg" alt="Drone categrory"> 
+      <h3>Drone camera</h3> 
+      <p>Hi tech drone camera, with AI integrated subsystem</p> 
+      <p class="price"><b>Starts from ₹2,000</b></p> 
+      <button> Explore</button>
+    </div> 
+ 
+    <div class="box"> 
+      <img src="Arduino.jpeg" alt="Controller Category"> 
+      <h3>Arduino Uno</h3> 
+      <p>Ai integrated </p> 
+      <p class="price"><b>Starts from ₹500</b></p> 
+      <button> Explore</button>
+
+    </div> 
+ 
+    <div class="box"> 
+      <img src="ethernet.jpeg" alt="Ethernet category"> 
+      <h3>Ethernet</h3> 
+      <p>durable and multienvironment</p> 
+      <p class="price"><b>Starts from ₹1000</b></p> 
+            <button> Explore</button>
+
+ 
+    </div> 
+ 
+    <div class="box"> 
+      <img src="dell.jpeg   " alt="Laptops category"> 
+      <h3>Dell Laptop</h3> 
+      <p>Slim design ai integrated.</p> 
+      <p class="price"><b>Starts from ₹50,000</b></p> 
+            <button> Explore</button>
+
+    </div> 
+  </div> 
+
+  </div>
+</body> 
+</html>
